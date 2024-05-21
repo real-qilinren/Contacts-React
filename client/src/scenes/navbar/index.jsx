@@ -7,16 +7,13 @@ import FlexBetween from '../../components/FlexBetween';
 
 const Navbar = () => {
     const dispatch = useDispatch();
-    const theme = useTheme();
     const mode = useSelector((state) => state.mode);
-
-    const alt = theme.palette.background.alt;
 
     return (
         <AppBar position="static">
             <Toolbar>
-                <FlexBetween sx={{ width: '100%', backgroundColor: alt }}>
-                    <Typography variant="h6" sx={{ flexGrow: 1 }}>
+                <FlexBetween sx={{ width: '100%' }}>
+                    <Typography fontWeight="bold" variant="h2" sx={{ flexGrow: 1 }}>
                         Contacts-React
                     </Typography>
                     <IconButton onClick={() => dispatch(setMode())} color="inherit">

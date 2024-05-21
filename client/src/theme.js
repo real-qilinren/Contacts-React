@@ -25,8 +25,7 @@ const themeSettings = (mode) => {
                 light: colorTokens.orange[300],
             },
             background: {
-                default: mode === 'dark' ? colorTokens.orange[900] : colorTokens.orange[50],
-                alt: mode === 'dark' ? colorTokens.orange[800] : colorTokens.orange[100],
+                default: mode === 'dark' ? colorTokens.orange[900] : colorTokens.orange[50]
             }
         },
         typography: {
