@@ -19,37 +19,15 @@ const themeSettings = (mode) => {
     return createTheme({
         palette: {
             mode: mode,
-            ...(mode === 'dark'
-                ? {
-                    primary: {
-                        main: colorTokens.orange[500],
-                        dark: colorTokens.orange[700],
-                        light: colorTokens.orange[300],
-                    },
-                    background: {
-                        default: colorTokens.orange[900],
-                        paper: colorTokens.orange[800],
-                    },
-                    text: {
-                        primary: colorTokens.orange[50],
-                        secondary: colorTokens.orange[200],
-                    },
-                }
-                : {
-                    primary: {
-                        main: colorTokens.orange[500],
-                        dark: colorTokens.orange[700],
-                        light: colorTokens.orange[300],
-                    },
-                    background: {
-                        default: colorTokens.orange[50],
-                        paper: colorTokens.orange[100],
-                    },
-                    text: {
-                        primary: colorTokens.orange[900],
-                        secondary: colorTokens.orange[700],
-                    },
-                }),
+            primary: {
+                main: colorTokens.orange[500],
+                dark: colorTokens.orange[700],
+                light: colorTokens.orange[300],
+            },
+            background: {
+                default: mode === 'dark' ? colorTokens.orange[900] : colorTokens.orange[50],
+                alt: mode === 'dark' ? colorTokens.orange[800] : colorTokens.orange[100],
+            }
         },
         typography: {
             fontFamily: ['Roboto', 'sans-serif'].join(','),
