@@ -19,17 +19,14 @@ const Contacts = () => {
 
     return (
         <Container>
-            <Typography variant="h4" component="h2" gutterBottom>
-                Contacts
-            </Typography>
             <Box mt={2}>
-                {/*<Grid container spacing={3}>*/}
-                {/*    {contacts.map(contact => (*/}
-                {/*        <Grid item xs={12} sm={6} md={4} key={contact.id}>*/}
-                {/*            <ContactCard contact={contact} />*/}
-                {/*        </Grid>*/}
-                {/*    ))}*/}
-                {/*</Grid>*/}
+                <Grid container spacing={3}>
+                    {contacts.map(contact => (
+                        <Grid item xs={12} sm={6} md={4} key={contact.id}>
+                            <ContactCard contact={contact} />
+                        </Grid>
+                    ))}
+                </Grid>
             </Box>
         </Container>
     );
