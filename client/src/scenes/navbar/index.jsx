@@ -1,5 +1,5 @@
 import React from 'react';
-import { AppBar, Toolbar, Typography, IconButton, useTheme } from '@mui/material';
+import { AppBar, Toolbar, Typography, IconButton } from '@mui/material';
 import { DarkMode, LightMode } from '@mui/icons-material';
 import { useDispatch, useSelector } from 'react-redux';
 import { setMode } from '../../state';

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import { Grid, Container, Typography, Box } from '@mui/material';
+import { Grid, Container, Box } from '@mui/material';
 import ContactCard from '../../components/contactCard';
 
 const Contacts = () => {
